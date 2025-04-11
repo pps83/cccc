@@ -50,7 +50,7 @@ For MSVC on windows you can follow the same basic procedure, but use the
 
   $ git clone https://github.com/sarnold/cccc
   $ cd cccc
-  $ ./build_msvc.bat --clean
+  $ ./build_w32vc.bat
 
 
 .. note:: On windows the executable name is ``cccc.exe``.
