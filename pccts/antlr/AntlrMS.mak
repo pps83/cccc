@@ -10,9 +10,9 @@ SET=$(PCCTS_HOME)\support\set
 
 
 # Compiler stuff
-CC = cl
+CC = cl -nologo
 CFLAGS = -I "." -I "$(PCCTS_H)" -I "$(SET)" -D "USER_ZZSYN" -D "PC" \
-        -D "ZZLEXBUFSIZE=65536"  /D "LONGFILENAMES" /W3
+        -D "ZZLEXBUFSIZE=65536" -D_CRT_SECURE_NO_WARNINGS /D "LONGFILENAMES" /W3
 
 ANTLR_OBJS = antlr.obj scan.obj err.obj bits.obj build.obj fset2.obj \
             fset.obj gen.obj globals.obj hash.obj lex.obj main.obj \
